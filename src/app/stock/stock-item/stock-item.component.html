@@ -1,0 +1,15 @@
+<div class="stock-container card">
+    <div class="name card__header">
+        <h3>{{stock.name}}</h3> - <h4>({{stock.code}})</h4>
+    </div>
+    <div class="card__body">
+        <div class="price quantity {{stock.isPositiveChange() ? 'success' :'danger'}} ">{{stock.price}}<span
+                class="price__unit">€</span>
+        </div>
+    </div>
+
+    <div class="card__footer">
+        <button class="btn btn--block btn--primary" (click)="toggleFavorite($event)" [disabled]="favorite"> Add to
+            Favorite</button>
+    </div>
+</div>

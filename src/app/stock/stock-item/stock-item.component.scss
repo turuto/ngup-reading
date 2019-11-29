@@ -1,0 +1,33 @@
+.card {
+	// display: inline-block;
+	max-width: 500px;
+	margin: 10px auto;
+
+	color: var(--color-txt);
+	background: var(--color-paper);
+	box-shadow: 0 0 4px rgba(0,0,0,.2);
+	&__header,
+	&__body {
+		padding: var(--spaces-default);
+	}
+	&__header {
+		display: flex;
+		align-items: baseline;
+
+		border-bottom: 4px solid var(--color-primary);
+	}
+	&__body {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.price {
+		font-size: 10em;
+		font-weight: bold;
+		&__unit {
+			font-size: .5em;
+		}
+	}
+}
+
